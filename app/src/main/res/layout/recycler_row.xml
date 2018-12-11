@@ -18,7 +18,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/iv_picture"
+            android:id="@+id/iv_image"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
@@ -36,7 +36,17 @@
                 android:textStyle="bold"
                 android:textSize="14sp"
                 tools:text="신세계"/>
-<!-- 별점 뷰 -->
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:id="@+id/rating_bar"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:max="10"
+                android:rating="0"/>
+
             <TextView
                 android:id="@+id/tv_movie_year"
                 android:layout_width="wrap_content"
